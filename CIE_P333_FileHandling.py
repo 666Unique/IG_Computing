@@ -1,0 +1,11 @@
+MyFile = "MyFile.txt"
+File = open(MyFile,'w')
+print("Please enter a line of text")
+TextLine = input()
+File.write(TextLine)
+File.close()
+print("The file contains this line of text:")
+File = open(MyFile,'r')
+TextLine = File.read()
+print(TextLine)
+File.close()
